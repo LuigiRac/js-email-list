@@ -9,7 +9,8 @@ button.addEventListener("click", getMail);
 
 function getMail() {
     for (let i = 0; i < 10; i++) {
-
+        arrayMail = [];
+        listUl.innerHTML = "";
         axios
             .get("https://flynn.boolean.careers/exercises/api/random/mail")
             .then((res) => {
